@@ -1,11 +1,15 @@
-import './index.css'
+import {Route, Routes} from "react-router-dom"
+import Home from "./Pages/Home"
+import Rewards from "./Pages/Rewards"
 
-function App() {
+
+export default function App() {
   return (
-    <>
-      <h1 className="text-3xl font-bold">Hello</h1>
-    </>
+    <div>
+        <Routes>
+          <Route path="/" element={<Home />}/>
+          <Route path="/rewards" element={<Rewards />}/>
+        </Routes>
+    </div>
   )
 }
-
-export default App
