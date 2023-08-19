@@ -1,4 +1,4 @@
-
+//This a sample card component which can be used to display the products in the shop.
 export default function Cards() {
 
     return (
