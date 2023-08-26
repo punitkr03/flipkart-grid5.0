@@ -15,7 +15,7 @@ contract FlipCoin is ERC20 {
         _;
     }
     
-    function mintTokens(address to, uint256 amount) external onlyOwner {
+    function mintTokens(address to, uint256 amount) external payable {
         _mint(to, amount);
     }
 }
